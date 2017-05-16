@@ -3,7 +3,7 @@ layout: post
 title: Objective-c 疑问
 date: 2017-05-16
 categories: blog
-tags:Objective-c
+tags:[Objective-c]
 description: 同一个类的对象的成员变量之间有关系？
 
 ---
