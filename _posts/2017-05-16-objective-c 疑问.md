@@ -13,7 +13,7 @@ description: 同一个类的对象的成员变量之间有关系？
 	{
 		Engine * engine;
 	}
-	-(void) setEngine:(Engine*）newEngine;
+	-(void) setEngine:(Engine*)newEngine;
 	@end  //car
 
 	@implementation Car
