@@ -56,10 +56,10 @@ description: oc中有关self super的思考
 
 
 总结： 
-	  1.self指定调用者也就是消息的接收者 receiver ，super 只指定selector的查找位置，也就是确定所要调用的方法，但方法中的self仍然是该消息的接收者receiver.如 子类与父类中都有属性 a,并在父类方法中使用了 self.a,此时的self.a 是消息接收者receiveer 的a.
+	1.self指定调用者也就是消息的接收者 receiver ，super 只指定selector的查找位置，也就是确定所要调用的方法，但方法中的self仍然是该消息的接收者receiver.如 子类与父类中都有属性 a,并在父类方法中使用了 self.a,此时的self.a 是消息接收者receiveer 的a.
 
-      2.self 始终是指向当前方法调用的对象，在静态方法中指向的是类，动态方法中指向的是对象。
+    2.self 始终是指向当前方法调用的对象，在静态方法中指向的是类，动态方法中指向的是对象。
 
-      3.在方法中 self.a 是通过 a的属性函数来访问的.直接使用a则是直接访问。
-      用@property关键字来声明的属性，在编译期会默认生成一个下划线加名称的属性变量，并且自动在implemention文件中生成setter和getter方法。
-	  使用_yourName的方式是直接引用变量，而通过点语法调用self.yourName这种形式，实际是调用setter或getter方法(需要注意reain release)！
+    3.在方法中 self.a 是通过 a的属性函数来访问的.直接使用a则是直接访问。
+    用@property关键字来声明的属性，在编译期会默认生成一个下划线加名称的属性变量，并且自动在implemention文件中生成setter和getter方法。
+	使用_yourName的方式是直接引用变量，而通过点语法调用self.yourName这种形式，实际是调用setter或getter方法(需要注意reain release)！
