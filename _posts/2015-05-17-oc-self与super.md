@@ -13,8 +13,7 @@ description: oc中有关self super的思考
 
    super 不是隐藏的参数，它只是一个"编译器指示符"。查找方法时，指定方法查找的位置在父类。
 
-
-![the self ponit to](https://github.com/intfre/intfre.github.io/blob/master/img/my_blog/2017-05-17/self.jpg) 
+![the self ponit to](https://github.com/intfre/intfre.github.io/blob/master/img/my_blog/2017-05-17/self.png) 
 
   　  面向对象过程中，子类继承父类，就拥有了父类所有的属性方法，一个完整的类的初始包  括子类初始化和父类初始化。
 　　
